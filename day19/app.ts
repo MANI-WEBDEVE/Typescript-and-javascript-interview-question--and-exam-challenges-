@@ -14,7 +14,7 @@ const startwith = (str:string, subStr:string) => {
     //* other method 
     let otherChecker:boolean = str.toLowerCase().slice(0, subStr.length) === subStr.toLowerCase()
     console.log(otherChecker)
-
+         
     let str3:string[] = str.split(' ')
     if(str3[0] === subStr){
         return true

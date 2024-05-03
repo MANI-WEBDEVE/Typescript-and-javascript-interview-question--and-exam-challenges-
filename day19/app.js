@@ -13,7 +13,7 @@ var startwith = function (str, subStr) {
     var str3 = str.split(' ');
     if (str3[0] === subStr) {
         return true;
-    }
+    } 
     else if (str3[0].toLowerCase() === subStr.toLowerCase()) {
         return true;
     }
