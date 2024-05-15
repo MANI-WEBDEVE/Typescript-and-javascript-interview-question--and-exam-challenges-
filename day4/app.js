@@ -19,18 +19,34 @@ let result = sortAscending1(num);
 const sortAscending = (arr) => {
   // Create a new array to keep the original array unchanged
   const sortedArray = arr.slice();
+  // console.log(sortedArray)
 
   // Bubble sort algorithm
   for (let i = 0; i < sortedArray.length - 1; i++) {
+    
     for (let j = 0; j < sortedArray.length - 1 - i; j++) {
+      
       if (sortedArray[j] > sortedArray[j + 1]) {
         // Swap elements if they are in the wrong order
-        const temp = sortedArray[j];
+       
+          console.log(`${sortedArray[j + 1 ]}`) 
+
+
         console.log(sortedArray[j + 1]);
+        console.log(sortedArray[j]);
+       
+        const temp = sortedArray[j];
+       
+        console.log(temp)
+       
         sortedArray[j] = sortedArray[j + 1];
-        console.log(`first ${sortedArray[j]} and second ${sortedArray[j + 1]}`);
+        
+        // console.log(`first ${sortedArray[j]} and second ${sortedArray[j + 1]}`);
+        
         sortedArray[j + 1] = temp;
-        console.log(sortedArray[j + 1] + " no");
+        
+        // console.log(sortedArray[j + 1] + " no");
+        
         // console.log("vip");
       }
     }
@@ -40,9 +56,9 @@ const sortAscending = (arr) => {
 };
 
 // Test the function
-const numbers = [5, 2, 9, 1, 3];
+const numbers = [2,1,2];
 const sortedNumbers = sortAscending(numbers);
 
-console.log("Original array:", numbers); // Output: Original array: [5, 2, 9, 1, 3]
-console.log("Sorted array:", sortedNumbers); // Output: Sorted array: [1, 2, 3, 5, 9]
-console.log("and");
+// console.log("Original array:", numbers); // Output: Original array: [5, 2, 9, 1, 3]
+// console.log("Sorted array:", sortedNumbers); // Output: Sorted array: [1, 2, 3, 5, 9]
+// console.log("and");

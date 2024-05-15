@@ -33,4 +33,4 @@ const stringCounter = (str, countStr, secondCounter) => {
   }, 0);
   return totalWord;
 };
-console.log(stringCounter("InamMani", "m", "i"));
+console.log(stringCounter("InamMani", "z", "z"));
